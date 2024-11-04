@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Performance Optimizer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>@keyframes spinworth{
+    
+        20%{
+            transform: translateY(-10%);
+        }
+        40%{
+            transform: translateY(-114%);
+        }
+        60%{
+            transform: translateY(-200%);
+        }
+        80%{
+            transform: translateY(-300%);
+        }
+        100%{
+            transform: translateY(-610%);
+        }
+    }
+    
+    @keyframes appear{
+        from{
+            opacity:0;
+            scale:0.5;
+        }
+        to{
+            opacity:1;
+            scale:1;
+        }
+    }
+    
+    @keyframes fade-out{
+        0% {
+            opacity:0;
+            transform: translateY(30px) scale(0);
+        }
+        
+        100% {
+            opacity:1;
+            transform: translateY(0px) scale(1);
+        }
+    }
+    
+    .header-main{
+        width: 100%;
+        height: 60px;
+        /* background-color: aqua  ; */
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    .logo{
+        height: 100%;
+        width: fit-content;
+        padding-left:50px;
+    }
+    .logo img{
+        height: 60px;
+    }
+    .header-nav{
+        height: 100%;
+        /* background-color:red; */
+    }
+    .header-nav ul{
+        list-style-type : none;
+        margin: 0%;
+        padding: 0%;
+        margin-left:2rem;
+        border-radius: 2rem;
+        display : flex;
+        
+    }
+    .header-nav ul li{
+        margin-left: 30px;
+        line-height: 60px;
+        margin-right: 30px;
+        
+    }
+    .amc:hover{
+        background-color: black;
+        border-radius: 1.25rem;
+    }
+    
+    .header-sm{
+        height: 100%;
+        display: flex;
+        
+        
+    }
+    .login{
+        justify-content: center;
+        line-height: 60px;
+        margin-right: 10px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .login a{
+        color:black;
+    }
+    
+    .login a:hover,.login:hover{
+        color:blue;
+        background-color:gray;
+    }
+    
+    .jk{
+        justify-content: center;
+        margin-top:15rem;
+        margin-left:8rem;
+        font-size:6rem;
+    }
+    
+    .tex{
+        display: flex;
+        margin-top: 15rem;
+        font-size: 4rem;
+        margin-left: 4rem;
+        
+    }
+    .te2{
+        margin-top:4.2rem;
+        overflow: hidden;
+        margin-left: 1rem;
+        height: 4.6rem;
+       
+    }
+    span{
+        
+        display: block;
+        animation-delay: 1s;
+        animation:spinworth 4s infinite ;
+    }
+    
+    
+    
+    .bang{
+        position:relative;
+    
+    }
+    .bang::before{
+        content: "";
+        position: absolute;
+        width:0%;
+        height:100%;
+        background:aquamarine;
+        z-index:-1;
+        transition: 0.3s;
+    }
+    .bang:hover::before{
+        width: 100%;
+    }
+    
+    .block{
+        
+        margin-bottom: 50rem;
+        width:50rem;
+        font-size: 2rem;
+        animation:fade-out 0.5s;
+        animation-timeline: view();
+        animation-range: entry -1rem;
+    }
+    .sed{
+        margin-top:30rem;
+        margin-bottom: 10rem;
+        margin-left: 4rem;
+    }
+    footer p{
+        font-size:2rem;
+        display: flex;
+        justify-content: center;
+        min-width: 100vw;
+        min-height: 5vh;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        background-color: aqua  ;
+    }
+    
+    </style>
+    
+    <!-- Option 1: Include in HTML -->
+</head>
+
+<body>
+
+    <header class="header-main">
+        <div class="logo"><img src="..\static\ProgressPulse-transformed.jpeg" /></div>
+
+        <div class="header-sm">
+            <nav class="header-nav">
+                <ul>
+                    <div class="amc">
+                        <li><a href="mailto:/kishorethiyagarajan7@gmail.com">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <button class='login' onclick="window.location.href='/data'"><a>Analyse</a></button>
+        </div>
+    </header>
+    <div class="banger">
+        <div class="tex">
+            <p>Track</p>
+            <div class="te2">
+                <span> </span>
+                <span> academic growth.</span>
+                <span> performance metrics.</span>
+                <span> student achievements.</span>
+                <span> learning outcomes.</span>
+            </div>
+        </div>
+        
+        <div class="sed">
+            
+            <div class="block">
+                Welcome to <a class="bang">ProgressPulse</a> your trusted companion for academic success!
+                Our platform leverages machine
+                learning algorithms to predict student marks with precision, providing insightful projections based on
+                study
+                habits, course load, and other key academic factors. By integrating data science with education, we aim
+                to help
+                students, parents, and educators understand and enhance performance, track progress, and set realistic
+                academic goals.
+            </div>
+            <div class="block">Discover how we can <a class="bang">empower</a> you to make informed decisions, optimize study
+                strategies, and unlock potential for the best academic results. Join us in transforming data into
+                success!
+            </div>
+            <div class="block">For <a class='bang'>educators and administrators</a>, our tool is a powerful resource to support student
+                success.By analyzing predicted trends, educators can provide personalized guidance, develop targeted
+                interventions,and foster a supportive learning environment that encourages students to thrive. Our insights 
+                help you identify patterns early on, allowing you to address any gaps before they widen and provide the right
+                resources to students when they need them most.</div>
+        </div>
+        <footer>
+            <p>Contact Us @ <a href="mailto://kishorethiyagarajan7@gmail.com">kishorethiyagarajan7@gmail.com</a></p>
+        </footer>
+</body>
+
+
+
+</html>
